@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather You Know It</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./assets/javascript/weatherapi.js"></script>
+  </head>
+  <body>
+    <h1 class="title">Weather You Know It</h1>
+
+    <div class="search-container">
+      <h3>How's the weather</h3>
+      <input
+        class="input-search"
+        type="search"
+        placeholder="Enter zip code or City"
+      />
+      <br />
+      <button id="check-weather" type="submit">We Know it</button>
+    </div>
+
+    <div class="weather-container">
+      <h4>Today's Forecast</h4>
+      <img class="icon" />
+      <p class="weather"></p>
+      <p class="temp"></p>
+      <p class="humidity"></p>
+    </div>
+
+    <div class="searchbar"></div>
+  </body>
+</html>
